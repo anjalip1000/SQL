@@ -1,0 +1,32 @@
+create table anjali(
+    id int,
+    name char(10),
+    age int,
+    primary key(id)
+);
+
+insert into anjali values(
+    100,'A',10
+);
+
+
+insert into anjali values(
+    101,'B',20
+);
+
+insert into anjali values(
+    102,'B',30
+);
+
+insert into anjali values(
+    103,'C',40
+);
+
+insert into anjali values(
+    104,'D',10
+);
+
+select  * from anjali;
+select id from anjali;
+select id,age from anjali where name='A' OR age=10;
+select distinct age from anjali;
